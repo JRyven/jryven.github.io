@@ -1,0 +1,29 @@
+/* Basic Flex */
+.bflex {
+    display: flex;
+    }
+
+    .bflexXtop {
+        justify-content: top;
+    }
+    .bflexXcenter {
+        justify-content: center;
+    }
+    .bflexXright{
+        justify-content: right;
+    }
+
+    .bflexYtop {
+        align-items: top;
+    }
+    .bflexYcenter {
+        align-items: center;
+    }
+    .bflexYbottom {
+        align-items: bottom;
+    }
+
+    .bflex > * {
+        flex: 1 0 auto;
+        height: auto;
+    }

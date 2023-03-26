@@ -1,0 +1,8 @@
+.page-homepage .item--aside img[alt="James Valeii"] {
+    margin: 0 0 0 0;
+}
+	@media only screen and (min-width: 48rem) {
+		.page-homepage .item--aside img[alt="James Valeii"] {
+		    margin: -1em auto 0 auto;
+		}
+	}

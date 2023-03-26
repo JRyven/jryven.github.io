@@ -1,0 +1,30 @@
+.dance_floor_square button {
+    color: #003c1d;
+    width: 100%;
+    vertical-align: top;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #003c1d;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: italic;
+}
+.dance_floor_square button:hover {
+    color: white;
+    background: #003c1d21;
+    border-color: #003c1d;
+    cursor: pointer;
+}
+[data-floorsquare="1"] button.stepped {
+    background: red;
+}
+[data-floorsquare="2"] button.stepped {
+    background: blue;
+}
+[data-floorsquare="3"] button.stepped {
+    background: green;
+}
+[data-floorsquare="4"] button.stepped {
+    background: yellow;
+}

@@ -1,0 +1,68 @@
+.print-only{
+	display: none;
+}
+@media print {
+	.print-only{
+		display: block;
+	}
+}
+@media print {
+	body {
+		display: block;
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+		color: #000;
+		font-family: 'Open Sans';
+	}
+	@page {
+	    size: auto;
+	    margin: 25mm 25mm 25mm 25mm;
+	}
+	section.section--cv:first-child {
+		margin: 0 0 1rem 0;
+		display: block;
+		position: relative;
+		border-top: 0px solid transparent;
+	}
+	section.section--cv {
+		margin: 1rem 0 1rem 0;
+		display: block;
+		position: relative;
+		border-top: 1px solid #000;
+	}
+	section.section--cv:last-child {
+		margin: 1rem 0 0 0;
+		display: block;
+		position: relative;
+	}
+	.section--cv:not(.section--portfolio) p > span {
+		display: block;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+	.section--cv:not(.section--portfolio) p > span:first-child {
+		font-weight: 800;
+		font-size: 0.8em;
+		text-transform: unset;
+	}
+	.section--cv:not(.section--portfolio) p > span:last-child {
+		font-weight: 300;
+		font-size: 0.75em;
+		text-transform: unset;
+	}
+	.section--cv.section--portfolio p > span {
+		display: block;
+		font-weight: 300;
+	}
+	.section--cv.section--portfolio a {
+		text-decoration: none;
+		color: #000;
+		margin: 0 0 1em 0;
+		display: block;
+		position: relative;
+	}
+	.section--cv.section--portfolio ul li {
+		font-size: 0.8em;
+	}
+}
