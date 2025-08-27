@@ -1,0 +1,115 @@
+/* Print styles specifically for click-to-print functionality */
+body {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	background: white;
+}
+
+@page {
+    size: auto;
+    margin: 25mm 25mm 25mm 25mm;
+}
+
+.print-only {
+	display: block;
+}
+
+section.section--cv:first-child {
+	margin: 0 0 1rem 0;
+	display: block;
+	position: relative;
+	border-top: 0px solid transparent;
+}
+
+section.section--cv {
+	margin: 1rem 0 1rem 0;
+	display: block;
+	position: relative;
+	border-top: 1px solid #000;
+}
+
+section.section--cv:last-child {
+	margin: 1rem 0 0 0;
+	display: block;
+	position: relative;
+}
+
+section.section--cv h2 {
+	margin-bottom: 1rem;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+section.section--cv .h3 {
+	font-family: 'Bitter', serif;
+	font-weight: 400;
+	font-size: 1.1em;
+	margin-bottom: 5px;
+}
+
+section.section--cv .h4 {
+	font-size: 1em;
+}
+
+section.section--cv .item {
+	margin-bottom: 1.5rem;
+}
+
+.section--cv:not(.section--portfolio) p > span {
+	display: block;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.section--cv:not(.section--portfolio) p > span:first-child {
+	font-weight: 800;
+	font-size: 0.9em;
+	text-transform: unset;
+}
+
+.section--cv:not(.section--portfolio) p > span:last-child {
+	font-weight: 300;
+	font-size: 0.8em;
+	text-transform: unset;
+}
+
+.section--cv.section--portfolio p > span {
+	display: block;
+	font-weight: 300;
+}
+
+.section--cv.section--portfolio a {
+	text-decoration: none;
+	color: #000;
+	margin: 0 0 1em 0;
+	display: block;
+	position: relative;
+}
+
+.section--cv.section--portfolio ul li {
+	font-size: 0.9em;
+}
+
+ul {
+	margin: 0.5rem 0;
+	padding-left: 1.2rem;
+}
+
+ul li {
+	margin-bottom: 0.3rem;
+	font-size: 0.9em;
+	line-height: 1.4;
+}
+
+p {
+	margin: 0 0 0.5rem 0;
+	line-height: 1.4;
+}
+
+.align-cetner {
+	text-align: center;
+}
