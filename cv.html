@@ -27,28 +27,24 @@
     
     <!-- Additional Meta Tags -->
     <meta http-equiv="Cache-control" content="no-cache" />
-    
+
     <!-- External Scripts -->
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin=""></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin=""></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    
+
+    <!-- Internal Scripts -->
+    <script src="/scripts/print.js"></script>
+
     <!-- Consolidated Stylesheet -->
-    <link rel="stylesheet" href="/styles.css" type="text/css" />
-    
-    <!-- Local Scripts -->
-    <script src="/scripts/head__react__like_button.js"></script>
-    <script src="/scripts/head__slugify.js"></script>
+    <link rel="stylesheet" href="/styles/styles.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/print.css" type="text/css" />
     
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
   </head>
   <body class="page-cv page-default">
     
     <!-- Header -->
-    <div class="container-wide header p-bg">
+    <header class="container-wide header p-bg">
       <div class="row middle-xs center-xs">
-        <header>
-        </header>
         <!-- Nav -->
         <nav class="col-xs-12 col-sm-8">
           <ul class="align-center unstyled">
@@ -126,9 +122,9 @@
           </ul>
         </nav>
       </div>
-    </div>
+    </header>
     
-    <div class="container-wide main p-bg">
+    <main class="container-wide main p-bg">
       <!--<div class="row">-->
       <!-- Main -->
       <div class="row">
@@ -145,11 +141,11 @@
             <div class="item--inner">
               <div id="cv_print">
                 <p class="align-cetner print-only">James Ryven Valeii | 269.601.1475 | Kalamazoo, MI</p>
-                <section class="section--cv section--summary">
+                <section id="professional-summary" class="section--cv section--summary">
                   <h2>Professional Summary</h2>
                   <p>Software Engineer with 13+ years of experience architecting high-performance web solutions and leading technical teams. Combines deep PHP expertise with proven ability to build strong collaborative relationships, mentor developers, and unite cross-functional teams. Track record of delivering enterprise-level solutions, handling 70M+ annual pageviews.</p>
                 </section>
-                <section class="section--cv section--competencies">
+                <section id="technical-competencies" class="section--cv section--competencies">
                   <h2>Technical Competencies</h2>
                   <div class="item">
                     <p><span class="block h4">Core Development</span></p>
@@ -180,9 +176,9 @@
                     </ul>
                   </div>
                 </section>
-                <section class="section--cv section--experience">
+                <section id="professional-experience" class="section--cv section--experience">
                   <h2>Professional Experience</h2>
-                  <div class="item">
+                  <div id="goop" class="item">
                     <p><span class="block h3">Goop</span> <span class="block h4">PHP Developer, Technical Lead</span> <span class="block">08/2022–Present</span></p>
                     <ul>
                       <li>Successfully implemented a content gate feature leading to a 625% boost in account creation, an 84% jump in log-ins, and, among users who signed up, a $35 increase in average order value.</li>
@@ -193,7 +189,7 @@
                       <li>Created a scalable documentation framework leveraging PHPDocumentor, Confluence, and version-controlled README files to streamline information access.</li>
                     </ul>
                   </div>
-                  <div class="item">
+                  <div id="no-borders" class="item">
                     <p><span class="block h3">No Borders Inc.</span> <span class="block h4">Senior Software Engineer</span> <span class="block">02/2021–08/2022</span></p>
                     <ul>
                       <li>Managed ecosystem of five e-commerce websites that served 50K+ visitors and earned $5M+ annually.</li>
@@ -204,7 +200,7 @@
                       <li>Architected content hierarchies and page structures optimized for effective sales funnels.</li>
                     </ul>
                   </div>
-                  <div class="item">
+                  <div id="boiling-pot-media" class="item">
                     <p><span class="block h3">Boiling Pot Media</span> <span class="block h4">Founder & Software Engineer</span> <span class="block">05/2011–02/2021</span></p>
                     <ul>
                       <li>Developed custom websites handling as many as 1M+ daily visits.</li>
@@ -214,7 +210,7 @@
                       <li>Established VPN-based infrastructure to host over 25 websites.</li>
                     </ul>
                   </div>
-                  <div class="item">
+                  <div id="vine-neighborhood" class="item">
                     <p><span class="block h3">Vine Neighborhood Association</span> <span class="block h4">Development Director</span> <span class="block">2012–2014</span></p>
                     <ul>
                       <li>Managed annual development program, raising +$150K in funds.</li>
@@ -223,7 +219,7 @@
                       <li>Implemented reporting systems ensuring 100% funding compliance.</li>
                     </ul>
                   </div>
-                  <div class="item">
+                  <div id="lisc-americorps" class="item">
                     <p><span class="block h3">LISC AmeriCorps</span> <span class="block h4">Sustainable Communities Coordinator</span> <span class="block">2011–2012</span></p>
                     <ul>
                       <li>Connected +20 501(c)3 organizations creating sustainable support networks.</li>
@@ -232,56 +228,26 @@
                     </ul>
                   </div>
                 </section>
-                <section class="section--cv section--volunteer">
+                <section id="open-source-community" class="section--cv section--volunteer">
                   <h2>Open Source & Community</h2>
-                  <div class="item">
-                    <p><span class="block h3">Toggle Admin Toolbar WordPress Plugin</span> <span class="block h4">Creator & Maintainer</span></p>
+                  <div id="toggle-admin-toolbar" class="item">
+                    <p><span class="block h3">Toggle Admin Toolbar WordPress Plugin</span> <span class="block">Creator & Maintainer</span></p>
                   </div>
                 </section>
-                <section class="section--cv section--education">
+                <section id="education" class="section--cv section--education">
                   <h2>Education</h2>
                   <p><span class="block h3">Western Michigan University</span> <span class="block h4">Bachelor of Science</span> <span class="block">Double Major: Urban & Regional Planning, Rhetoric & Writing</span></p>
                 </section>
               </div>
             </div>
-            <style>
-              .print-only {
-                display: none;
-              }
-              @media print {
-                .print-only {
-                  display: block;
-                }
-              }
-            </style>
-            <script>
-              function click_toprint() {
-                var summary = document.getElementById("cv_print").innerHTML;
-                var markup = '<div style="display:none;" id="cv_print_element">' + summary + "</div>";
-                function newWindow(id) {
-                  var html = jQuery(id).html();
-                  var win = window.open("", "pdfview", "resizable,height=1125,width=1500");
-                  var crit_style = '<link rel="stylesheet" type="text/css" href="/styles/print-click.css" />';
-                  var open_style = '<link rel="stylesheet" type="text/css" href="/styles/opensans.css" />';
-                  var bitt_style = '<link rel="stylesheet" type="text/css" href="/styles/bitter.css" />';
-                  win.document.head.innerHTML = "<head><title>James Valeii CV</title>" + crit_style + open_style + bitt_style + "</head>";
-                  win.document.body.innerHTML = "<body>" + html + "</body>";
-                  var script = document.createElement("script");
-                  script.innerHTML = "window.print();";
-                  win.document.head.appendChild(script);
-                }
-                jQuery("body").append(markup);
-                newWindow("#cv_print_element");
-              }
-            </script>
           </article>
         </main>
         <!-- Secondary -->
       </div>
-    </div>
+    </main>
     
     <!-- Footer -->
-    <div class="container-wide footer">
+    <footer class="container-wide footer">
       <div class="row">
         <footer class="col-xs-12 col-sm-offset-2 col-sm-8">
           <div>
@@ -307,7 +273,7 @@
           </div>
         </footer>
       </div>
-    </div>
+    </footer>
     
   </body>
 </html>
